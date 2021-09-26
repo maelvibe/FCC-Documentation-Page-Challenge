@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+  font-family: 'Source Code Pro';
+}
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: #dbe8ff;
+   font-family: 'Source Code Pro', bold;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: block;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  font-weight: bold;
+}
+
+header {
+  font-size: 1em;
+  padding: 0.4em;
+}
+section {
+  margin-left: 310px;
+}
+
+p {
+  margin: 1em;
+  line-height: 1.5;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+  line-height: 1.4;
+}
+code {
+  background-color: #eaecef;
+  padding: 1em;
+  border-radius: 0.3em;
+  margin: 2em;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    position: static;
+    width: 100%;
+    border: none;
+    text-align: center;
+  }
+  section {
+    margin-left: 0;
+  }
+}
+
+</style>
+<nav class="main-nav" id="navbar">
+  <header>Microsoft Paint</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a>
+    <li><a class="nav-link" href="#Starting_up_Microsoft_Paint">Starting up Microsoft Paint</a>
+    <li><a class="nav-link" href="#Fundamentals">Fundamentals</a>
+    <li><a class="nav-link" href="#Setting_the_Canvas_Size">Setting the Canvas Size</a>
+    <li><a class="nav-link" href="#Setting_the_Foreground/Background_Colours">Setting the Foreground/Background Colours</a>
+
+  </ul>
+</nav>
+
+<main id="main-doc">
+
+  <section class="main-section" id="Introduction">
+    <header>
+      <h1>Introduction</h1>
+    </header>
+    <p>Microsoft Paint allows you to produce your own pictures (or edit existing ones). In Windows XP, you can no longer access Paint directly from the Microsoft Office applications; instead, you insert the picture file or copy and paste the picture directly from Paint.</p>
+    <p> Note that pictures and drawings are fundamentally different. A picture is composed of a fine grid of coloured dots (pixels), whereas a drawing is composed of lines and areas. If you paste a drawing into a painting program, its component units (the lines etc) are lost - they become a series of individual dots. To create a drawing you need to use Microsoft Draw (see A Guide to Microsoft Draw for details).</p>
+    <code> print("I started this before fully reading the instructions")</code>
+  </section>
+
+  <section class="main-section" id="Starting_up_Microsoft_Paint">
+    <header>
+      <h1>Starting up Microsoft Paint</h1>
+    </header>
+    <p>To run Microsoft Paint independently:</p>
+
+    <ol>
+      <li>Open the Windows Start menu, select Programs then Accessories and finally Paint
+      <li>[Maximize] the window so that the Paint window fills the screen
+    </ol>
+    <p>Your screen should now appear as below:</p>
+    <img class="image" src="https://i.imgur.com/s9ANZ5r.png>" </section>
+    <p>The white area on the screen is your painting canvas, below this is a palette of 28 colours, while to the left is a toolbox. Many of the tools in the toolbox match those in Microsoft Draw but they don't all behave in exactly the same way. </p>
+    <code> print("And i have three more to go")</code>
+  </section>
+
+  <section class="main-section" id="Fundamentals">
+    <header>
+      <h1>Fundamentals</h1>
+    </header>
+    <p>Before you start to explore the toolbox, it's important to understand several fundamental aspects of using a painting package. The major difference between this and a drawing package is that once a line or shape has been drawn it cannot be edited in the same way. You cannot, for example, lengthen a line, nor can you change its style or colour. Further, the line cannot be moved independently of its surroundings, neither can the order of objects be changed (whatever is drawn last is what appears in the picture). </p>
+    <p> With this in mind, you have to set up line thickness and colour before you draw an object. Then, if you fail to draw the object precisely in the right place, you have to use Undo (Ctrl z) to erase it and then try again. When creating a picture you will find you have to use Undo quite frequently! </p>
+    <code> print("At this rate Im just making stuff up")</code>
+  </section>
+
+  <section class="main-section" id="Setting_the_Canvas_Size">
+    <header>
+      <h1>Setting the Canvas Size</h1>
+    </header>
+    <p>The canvas consists of a fine grid of pixels. You can see individual pixels and can display the grid by using the magnification facility, as you will see later. This can help considerably if accurate drawing is required.</p>
+    <p> To increase the size of your canvas you can simply drag out the edges to the required size using the mouse on the canvas handles. These are positioned at each corner of the canvas and half-way along each side. You can also set it precisely via the Image menu. </p>
+    <ol>
+      <li>Position the mouse cursor over one of the canvas handles on the right or bottom edge - use the bottom right corner handle to change both the width and the height - Note that within the picture itself the current grid coordinates of the mouse cursor (which currently appears as a pencil) area displayed at the foot of the screen). You can use these to help you draw accurately. Outside the canvas area, the mouse cursor appears in its usual arrow shape. Only when it is placed exactly over one of the canvas handles does it become a two-headed arrow.
+      <li>Hold down the mouse button and drag the mouse outwards (or inwards) - note how the new size is displayed by the coordinates at the foot of the screen
+      <li>Release the mouse button when the canvas is the required size It's not that easy to reset the canvas size this way - an easier method is to set up the size via the menu system:
+      <li> Open the Image menu and select Attributes... - the following window appears:
+        <img class="image" src="https://i.imgur.com/0KUJAWz.png" </section>
+      <li>Under Units decide whether you want to define the size in Inches, Cm or Pixels
+      <li>Now set up the Width and Height - here change it to 500 by 400 pixels
+      <li>Press <Return> for [OK] and the canvas is resized Note: If you increase the size of your canvas, the additional area will appear in whatever background colour is set at the time. For this reason, it's a good idea to set this up before you mess around with the colour settings
+    </ol>
+    <code> print("Computer goes br br br")</code>
+  </section>
+
+  <section class="main-section" id="Setting_the_Foreground/Background_Colours">
+    <header>
+      <h1>Setting the Foreground/Background Colours</h1>
+    </header>
+    <p>At any one time, you have only two colours which you can use to draw an object. In Paint these are known as the foreground colour and background colour. These are the two colours shown to the left of the palette. The top square (currently black) denotes the foreground colour, while the partiallyhidden lower square (currently white) denotes the background colour. If you draw a solid shape, the surrounding line is drawn in the foreground colour, with the fill in the background colour.</p>
+    <p> To draw another object in a different colour you have to change the current foreground and/or background colours before you start drawing. This is done simply by clicking with the left (for foreground) or right (for background) mouse buttons on the palette. You can also use these buttons when drawing to reverse the normal colours - if you draw a line using the right mouse button, it appears in the background colour. </p>
+    <p> To change the default drawing colours</p>
+    <ol>
+      <li>Position the mouse cursor over the required foreground colour in the palette and click on the left mouse button
+      <li>For the background colour, repeat step 1 but click using the right mouse button
+        <ol>
+          <p>You will find that the small squares to the left of the colour palette now match your choices. It's important that you don't select the same colour for both the foreground and background. You will learn later how to change the colours available to you in the palette itself. </p>
+          <code> print("Help me.")</code>
+
+  </section>
+</main>
+</html>
